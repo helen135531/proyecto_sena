@@ -1,6 +1,6 @@
 <?php 
 if($_POST){
-    session_start();
+    
     require '../modelo/db.php';
             $email=$_POST['usuario'];
             $password=$_POST['pass'];   
