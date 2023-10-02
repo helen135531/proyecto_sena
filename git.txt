@@ -1,0 +1,15 @@
+github
+*git clone URL---bajar repositorio
+
+INICIO 
+*git init ---crear repo local
+*git remote add origin "url"  ---conectar con repo de 
+
+*git status --- muestra archivos nuevos y cambios, tambien archivos no añadidos al repo local
+*
+
+*git add . ---añade los archivos a repositorio
+*git commit -m "comentario" ---prepara archivos a subir
+*git push ---sube los archivo preparados
+
+*git pull origin main ---actualizar repositorio local a partir de repositorio de GitHub
