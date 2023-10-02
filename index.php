@@ -1,3 +1,15 @@
+<?php 
+/*
+repositorio
+ https://github.com/helen135531/proyecto_sena.git
+
+GITHUB COMANDS
+-git clone ---bajar del repositorio github
+-git add ---añadir al repositorio
+-git diff --- muestra cambios recientes
+-git push---enviar a repositorio github
+-git commit -m "" --- preparar archivos y descripcion de actualizacion
+*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
