@@ -6,7 +6,7 @@ INICIO
 *git remote add origin "url"  ---conectar con repo de 
 
 *git status --- muestra archivos nuevos y cambios, tambien archivos no añadidos al repo local
-*
+*git branch -m nombre_nuevo ---nueva rama *recomendado main*
 
 *git add . ---añade los archivos a repositorio
 *git commit -m "comentario" ---prepara archivos a subir
