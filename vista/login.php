@@ -19,7 +19,7 @@
         <input type="password" placeholder="Ingrese Password" name="pass">
         <input type="submit" value="Log In" name="enviar">
         <a href="#">¿Perdiste tu contraseña?</a><br>
-        <a href="#">¿No tienes una cuenta?</a><br>
+        <a href="register.php">¿No tienes una cuenta?</a><br>
         <?php require "../controlador/login.php";   ?>
       </form>
     </div>
