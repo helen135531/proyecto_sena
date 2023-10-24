@@ -1,5 +1,17 @@
+
 <?php
 session_start();
+if ($_SESSION["Rol"]== 1){
+    echo 'no tienes los permisos necesarios';
+    ?><a href="vistaU.php">volver</a> <?php
+    die();
+}
+else if ($_SESSION["Rol"]== null || $_SESSION["Rol"]== ""){
+    echo "primero inicia sesion";
+    ?><a href="login.php"> inicia session</a> <?php
+    die();
+}
+
 require '../modelo/db.php';
 $consulta= $db->prepare ("SELECT * FROM usuario;");
 $consulta->execute();

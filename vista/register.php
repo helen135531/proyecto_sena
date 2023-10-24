@@ -24,7 +24,7 @@
           <option value="C.E">cedula extrangera</option>
         </select>
         <label for="NoDocument">numero de documento</label>
-        <input type="number" placeholder="Ingrese sus apellidos" name="noDocumento">
+        <input type="number" placeholder="Ingrese numero de identidad" name="noDocumento">
 
        <label for="Email">correo</label>
         <input type="email" placeholder="Ingrese correo" name="correo">

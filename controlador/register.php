@@ -19,6 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt->execute();
 
         echo "registrado correctamente";
+        header('location:login.php');
 
     }   
     catch(PDOException $e){

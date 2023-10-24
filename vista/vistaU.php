@@ -25,13 +25,21 @@
         </div>
         
         <div class="user-links">
-          <a href="vista/login.php"><img src="../assets/img/user-3.png" alt="" class="user"></a>
+          <a href="datos.php"><img src="../assets/img/user-3.png" alt="" class="user"></a>
           <a href="#"><img src="../assets/img/pngwing.com.png" class="cesta" alt=""></a>
         </div>
+        <div class="CS"> 
+            <a href="../controlador/salir.php">salir</a>
       </header>
+      
+      
     <header>
+    <h1 id="B">BIENVENIDO <?php session_start(); echo $_SESSION['Nombre'];
+     if($_SESSION['Rol'] == 3 ){
+        ?><a href="vistaA.php"> volver</a><?php
+     } ?></h1>
         <div class="header-content container" id="pp">
-
+        
             <div class="swiper mySwiper-1">
                 <div class="swiper-wrapper">
 

@@ -1,6 +1,7 @@
 <?php 
 if($_POST){
     session_start();
+    
     require '../modelo/db.php';
             $email=$_POST['usuario'];
             $password=$_POST['pass'];   
@@ -22,7 +23,8 @@ if($_POST){
             $usuario = $consulta->fetch(PDO::FETCH_ASSOC);
            
 
-
+            $_SESSION['Rol'] = $usuario["idRolUsuarioFK"];
+            $_SESSION['Nombre'] = $usuario["nombreUsuario"];
         
 
             if($usuario){

@@ -9,7 +9,12 @@ GITHUB COMANDS
 -git diff --- muestra cambios recientes
 -git push---enviar a repositorio github
 -git commit -m "" --- preparar archivos y descripcion de actualizacion
-*/ ?>
+*/ 
+
+session_start();
+if(isset($_SESSION["usuario"])){
+    header("location:vista/vistaA.php");
+}?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

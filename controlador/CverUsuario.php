@@ -17,7 +17,7 @@ $stmt->execute();
         <th>telefono</th>
         <th>correo</th>
         <th>contraseña</th>
-        <th colspan="2">acciones</th>
+        <th colspan="2">estado</th>
     </tr>
 
     <?php
@@ -36,9 +36,18 @@ $stmt->execute();
         <td> <?php echo $row['passwordusuario'] ?></td>
         <td> <?php echo $row['fotoUsuario'] ?></td>
         <td> <?php echo $row['estadoUsuario'] ?></td>
-        <td> <?php echo $row['idRolUsuarioFK'] ?></td>
+        <td> <?php 
+        if($row['idRolUsuarioFK'] == 1){
+            echo "usuario";
+        } 
+        if($row['idRolUsuarioFK'] == 2){
+            echo "domiciliario";
+        }
+        if($row['idRolUsuarioFK'] == 3){
+            echo "administrador";
+        }?></td>
         <td><a href="../modelo/Eusuario.php?id=<?php echo $row['idUsuario']?> ">eliminar</a></td>
-        
+        <td><a href="../modelo/Ausuario.php?id=<?php echo $row['idUsuario']?> ">modificar</a></td>
 
 
     </tr> <?php
