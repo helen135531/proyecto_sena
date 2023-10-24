@@ -17,10 +17,6 @@ try{
   exit;
 }
 
-if($db){
-  echo "conexion exitosa";
-}
 
- 
 
 ?>

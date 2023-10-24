@@ -1,18 +1,18 @@
 <?php
 
-
+session_start();
 
 
 if(isset($_POST['agregarP'])){
 
-    require_once("../modelo/db.php")
+    require_once("../modelo/db.php");
     $nombreP=$_POST['nombreP'];
     $precioP=$_POST['precioP'];
 
-    try
+    try{
 
     $conexion= $db->prepare("INSERT INTO Producto(descripProducto,precioProducto,categoriaProducto,estadoProducto) VALUES
-    (':nombre',:precio,'pasabocas','disponible'),")
+    (':nombre',:precio,'pasabocas','disponible'),");
 
 
     $conexion-> bindParam(':nombre',$nombreP);
@@ -21,8 +21,8 @@ if(isset($_POST['agregarP'])){
     $conexion-> execute();
 
     echo"se agrego el producto";
-    
-    catch(PDOExcetion $e){
+    }
+    catch(PDOException $e){
         echo "error D:". $e->getMessage();
     }
 }

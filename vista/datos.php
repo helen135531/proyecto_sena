@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,18 +26,57 @@
         </div>
         
         <div class="user-links">
-          <a href="datos.php"><img src="../assets/img/user-3.png" alt="" class="user"></a>
+          <a href="../index.php"><h2>volver</h2></a>
           <a href="#"><img src="../assets/img/pngwing.com.png" class="cesta" alt=""></a>
         </div>
         <div class="CS"> 
-            <a href="../controlador/salir.php">salir</a>
+            <a href="../controlador/salir.php" style="color:aliceblue"><h2>salir</h2></a>
       </header>
-        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <h1>datos del usuario (<?php echo $_SESSION['id'];?>)</h1>
           
         
-      <h1>se supone que aqui hay datos XD</h1>
+      <?php 
+
+
+      
+require_once('../modelo/db.php');
+
+$sql = 'SELECT * FROM usuario where idUsuario=:id;';
+$stmt = $db-> prepare($sql);
+$stmt -> bindParam(':id',$_SESSION['id']);
+$stmt->execute();
+?>
+
+<h2>
+    <?php
+    $numero =1;
+    while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
+      
+         
+         echo "tipo de documento ".$row['tipoDocUsuario']."<br>" ;
+         echo "numero de documento: ".$row['noDocUsuario']."<br>" ;
+         echo "nombre: ".$row['nombreUsuario']."<br>" ;
+         echo "apellidos: ".$row['apellidoUsuario']."<br>"; 
+         echo "direccion: ".$row['direccionUsuario']."<br>"; 
+         echo "telefono: ".$row['telefonoUsuario']."<br>";
+         echo "correo: ".$row['correoUsuario']."<br>";
+         echo "contraseña: ".$row['passwordusuario']."<br>";
+        
+        echo "tipo";
+        if($row['idRolUsuarioFK'] == 1){
+            echo "usuario";
+        } 
+        if($row['idRolUsuarioFK'] == 2){
+            echo "domiciliario";
+        }
+        if($row['idRolUsuarioFK'] == 3){
+            echo "administrador";
+        }
+        ?><br><td><a href="../vista/modificarU.php?id=<?php echo $row['idUsuario']?> ">modificar</a></td><?php
+     } ?> </h2>
         <br><br><br><br><br><br><br><br><br><br><br>
-      <footer class="footer container">
+   <!--   <footer class="footer container">
           <img class="logo-2" src="../assets/img/tamales.png" alt="">
           <div class="links">
             <h4>loren</h4>
@@ -85,5 +125,4 @@
             </div>
         </div>
    </footer>
-      
-
+    -->

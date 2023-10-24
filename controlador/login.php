@@ -25,6 +25,7 @@ if($_POST){
 
             $_SESSION['Rol'] = $usuario["idRolUsuarioFK"];
             $_SESSION['Nombre'] = $usuario["nombreUsuario"];
+            $_SESSION['id'] = $usuario["idUsuario"];
         
 
             if($usuario){

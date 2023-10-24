@@ -47,7 +47,7 @@ $stmt->execute();
             echo "administrador";
         }?></td>
         <td><a href="../modelo/Eusuario.php?id=<?php echo $row['idUsuario']?> ">eliminar</a></td>
-        <td><a href="../modelo/Ausuario.php?id=<?php echo $row['idUsuario']?> ">modificar</a></td>
+        <td><a href="../vista/modificarU.php?id=<?php echo $row['idUsuario']?> ">modificar</a></td>
 
 
     </tr> <?php

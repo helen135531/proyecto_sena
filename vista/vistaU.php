@@ -29,7 +29,7 @@
           <a href="#"><img src="../assets/img/pngwing.com.png" class="cesta" alt=""></a>
         </div>
         <div class="CS"> 
-            <a href="../controlador/salir.php">salir</a>
+           <h2><a href="../controlador/salir.php" style="color:aliceblue">salir</a></h2>
       </header>
       
       
