@@ -16,7 +16,7 @@ else if($_SESSION["Rol"]== 3){?>
 <input type="text" name="nombreP" id="" placeholder="ingresa nombre del producto">
 <input type="number" name="precioP" id="" placeholder="ingresa precio">
 <input type="submit" value="agregar" name="agregarP">
-
+<br><br><br><br><br><br><br><br>
 <?php
 require_once('../controlador/Aproductos.php')
 

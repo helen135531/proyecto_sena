@@ -53,7 +53,7 @@ $usuario = $consulta->fetch(PDO::FETCH_ASSOC);
    <br>
    <br>
    <br>
-   <p>usuarios</p>
+   <p>usuarios  </p> <a href="vistaA.php"> volver </a>
     <?php   
     require ('../controlador/CverUsuario.php');
 

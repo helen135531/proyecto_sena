@@ -12,8 +12,8 @@
       <h1>Login Here</h1>
       <form method="post">
         <!-- USERNAME INPUT -->
-        <label for="username">Usuario</label>
-        <input type="text" placeholder="Ingrese Username" name="usuario">
+        <label for="username">Correo</label>
+        <input type="text" placeholder="Ingrese su Correo" name="usuario">
         <!-- PASSWORD INPUT -->
         <label for="password">Contraseña</label>
         <input type="password" placeholder="Ingrese Password" name="pass">

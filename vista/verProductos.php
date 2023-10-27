@@ -55,10 +55,10 @@ $usuario = $consulta->fetch(PDO::FETCH_ASSOC);
    <br>
    <br>
    <br>
-   <p>productos</p>
+   <p>productos</p>  <a href="vistaA.php"> volver </a>
     <?php 
 
-   //require ('../controlador/CverProductos.php');
+   require ('../controlador/CverProductos.php');
 
     
     ?>
