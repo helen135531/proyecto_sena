@@ -1,7 +1,7 @@
 <?php
 require_once('../modelo/db.php');
 
-$sql = "SELECT * FROM producto;";
+$sql = "SELECT * FROM Producto;";
 $stmt = $db-> prepare($sql);
 $stmt->execute();
 ?>

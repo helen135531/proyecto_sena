@@ -13,3 +13,6 @@ INICIO
 *git push ---sube los archivo preparados
 
 *git pull origin main ---actualizar repositorio local a partir de repositorio de GitHub
+
+
+https://github.com/helen135531/proyecto_sena.git
