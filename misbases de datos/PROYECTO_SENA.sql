@@ -1,4 +1,4 @@
-drop database if exists PROYECTO_SENA;
+drop database if exists bolitcm17gznhmyd2rid;
 drop table usuario;
 use proyecto_sena;
 use bolitcm17gznhmyd2rid;
@@ -6,6 +6,7 @@ use bolitcm17gznhmyd2rid;
 select * from usuario
 ;
 CREATE DATABASE PROYECTO_SENA;
+create database bolitcm17gznhmyd2rid;
 USE PROYECTO_SENA;
 
 create table rolUsuario(
@@ -24,7 +25,7 @@ categoriaProducto varchar(40) not null,
 estadoProducto varchar(30)
 );
 
-CREATE TABLE Usuario(
+CREATE TABLE usuario(
 idUsuario int not null auto_increment,
 PRIMARY KEY(idUsuario),
 tipoDocUsuario VARCHAR (30),
@@ -55,7 +56,7 @@ totalPedido double not null,
 estadoPedido varchar (30) not null,
 pedidoaDomicilio char (3) not null,
 idUsuarioFK int not null,
-FOREIGN KEY (idUsuarioFK) REFERENCES Usuario (idUsuario)
+FOREIGN KEY (idUsuarioFK) REFERENCES usuario (idUsuario)
 
 );
 
@@ -67,7 +68,7 @@ horaDomicilio time not null,
 estadoDomicilio varchar (30) not null,
 idPedidoFK int not null,
 idDomiciliarioFK int not null,
-FOREIGN KEY (idDomiciliarioFK) REFERENCES Usuario (idUsuario)
+FOREIGN KEY (idDomiciliarioFK) REFERENCES usuario (idUsuario)
 );
 
 ALTER TABLE Domicilio ADD FOREIGN KEY (idPedidoFK) REFERENCES Pedido (idPedido);
