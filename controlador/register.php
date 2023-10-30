@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $direccion = $_POST['direccion'];
 
     try{
-        $sql = "INSERT INTO Usuario (tipoDocUsuario,noDocUsuario,nombreUsuario,apellidoUsuario,direccionUsuario,telefonoUsuario,correoUsuario,passwordusuario,estadoUsuario,idRolUsuarioFK) VALUE 
+        $sql = "INSERT INTO usuario (tipoDocUsuario,noDocUsuario,nombreUsuario,apellidoUsuario,direccionUsuario,telefonoUsuario,correoUsuario,passwordusuario,estadoUsuario,idRolUsuarioFK) VALUE 
         ('$tDocumento','$noDocumento','$nombre','$apellido','$direccion',$telefono,'$correo','$pass','inactivo',1)";
        $stmt=$db->prepare($sql);
         $stmt->execute();
