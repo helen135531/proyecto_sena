@@ -1,5 +1,5 @@
 <?PHP
-
+include '../nuevo carro/project/components/connect.php'; 
 //conexion base de datos
 /*$server = "localhost";//servidor:localhost
 $user= "root";//usuario root

@@ -57,10 +57,10 @@ else if($_SESSION["Rol"]== 3){
        <br>
        <h1 id="B">BIENVENIDO <?php echo $_SESSION['Nombre'];?></h1>
         <h2><a href="verUsuario.php">usuarios</a></h2>
-        <h2><a href="verProductos.php">productos</a></h2>
-        <h2><a href=" ../reportes_pdf/Reporte.php">Reportes de Pedidos</a></h2>
+        <h2><a href=" reporte_usuarios.php">Reportes de Pedidos</a></h2>
         <h2><a href="vistaU.php">vista previa pagina principal</a></h2>
         <h2><a href="../controlador/salir.php">salir</a></h2>
+        <h2><a href="../nuevo carro/project/add_product.php">añadir productos</a></h2>
 
         
     

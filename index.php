@@ -43,7 +43,6 @@ if(isset($_SESSION["usuario"])){
         
         <div class="user-links">
           <a href="vista/login.php"><img src="assets/img/user-3.png" alt="" class="user"></a>
-          <a href="#"><img src="assets/img/pngwing.com.png" class="cesta" alt=""></a>
         </div>
       </header>
     <header>
@@ -62,7 +61,7 @@ if(isset($_SESSION["usuario"])){
                                 <p>Precio por caja:</p>
                                 <p>$17.000 </p>
                                     <div class="botones">
-                                        <a href="#" class="btn-1">comprar</a>
+                                        
                                         <a href="#productos" class="btn-1">menu</a>
                                     </div>
                                </div>
@@ -88,7 +87,7 @@ if(isset($_SESSION["usuario"])){
                                         $9.000</p>
                                          
                                         <div class="botones">
-                                            <a href="#" class="btn-1">comprar</a>
+                                            
                                             <a href="#productos" class="btn-1">menu</a>
                                         </div>
                                    </div>
@@ -112,7 +111,7 @@ if(isset($_SESSION["usuario"])){
                                             $33.000</p>
                                              
                                             <div class="botones">
-                                                <a href="#" class="btn-1">comprar</a>
+                                                
                                                 <a href="#productos" class="btn-1">menu</a>
                                             </div>
                                        </div>
@@ -153,7 +152,7 @@ if(isset($_SESSION["usuario"])){
                             <p>calida premium</p>
                             <span class="price" >$13.000</span>
                             <div class="botones">
-                                <a href="#" class="btn-1">comprar</a>
+                                
                             </div>
                        </div>
                    </div>
@@ -171,7 +170,7 @@ if(isset($_SESSION["usuario"])){
                     <p>calida premium</p>
                     <span class="price" >$17.000</span>
                     <div class="botones">
-                        <a href="#" class="btn-1">comprar</a>
+                        
                     </div>
                </div>
            </div>
@@ -188,7 +187,7 @@ if(isset($_SESSION["usuario"])){
             <p>calida premium</p>
             <span class="price" >$10.000</span>
             <div class="botones">
-                <a href="#" class="btn-1">comprar</a>
+                
             </div>
        </div>
    </div>
@@ -220,7 +219,7 @@ if(isset($_SESSION["usuario"])){
                     <p>calida premium</p>
                     <span class="price" >$12.000</span>
                     <div class="botones">
-                        <a href="#" class="btn-1">comprar</a>
+                        
                     </div>
                </div>
            </div>
@@ -238,7 +237,7 @@ if(isset($_SESSION["usuario"])){
             <p>calida premium</p>
             <span class="price" >$7.000</span>
             <div class="botones">
-                <a href="#" class="btn-1">comprar</a>
+                
             </div>
        </div>
    </div>
@@ -255,7 +254,7 @@ if(isset($_SESSION["usuario"])){
     <p>calida premium</p>
     <span class="price" >$80.000</span>
     <div class="botones">
-        <a href="#" class="btn-1">comprar</a>
+        
     </div>
 </div>
 </div>
@@ -287,7 +286,7 @@ if(isset($_SESSION["usuario"])){
                 <p>calida premium</p>
                 <span class="price" >$2.500</span>
                 <div class="botones">
-                    <a href="#" class="btn-1">comprar</a>
+                   
                 </div>
            </div>
        </div>
@@ -305,7 +304,7 @@ if(isset($_SESSION["usuario"])){
         <p>calida premium</p>
         <span class="price" >$7.000</span>
         <div class="botones">
-            <a href="#" class="btn-1">comprar</a>
+            
         </div>
    </div>
 </div>
@@ -322,7 +321,7 @@ if(isset($_SESSION["usuario"])){
 <p>calida premium</p>
 <span class="price" >$7.000</span>
 <div class="botones">
-    <a href="#" class="btn-1">comprar</a>
+    
 </div>
 </div>
 </div>
@@ -362,10 +361,10 @@ if(isset($_SESSION["usuario"])){
             <div class="txt">
                 <h4>direccion</h4>
                 <p>
-                    hola
+                    bogota
                 </p>
                 <p>
-                    como estan
+                    calle 2a #6-127
                 </p>
             </div>
             <div class="txt">

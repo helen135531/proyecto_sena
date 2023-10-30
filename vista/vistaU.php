@@ -26,8 +26,12 @@
         
         <div class="user-links">
           <a href="datos.php"><img src="../assets/img/user-3.png" alt="" class="user"></a>
-          <a href="#"><img src="../assets/img/pngwing.com.png" class="cesta" alt=""></a>
+          <a href="../nuevo carro/project/shopping_cart.php " style="color:aliceblue">CATALOGO</a>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="CS"> 
            <h2><a href="../controlador/salir.php" style="color:aliceblue">salir</a></h2>
       </header>
@@ -124,48 +128,9 @@
      <main class="products">
         
         <div class="tabs container">
-            <?php
-            require '../modelo/db.php';
-            $stmt= $db->prepare ("SELECT * FROM usuario;");
-            $stmt->execute(); 
-            ?> 
-            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
-            <label for="tab1" id="productos" class="pro">ACHIRAS</label>
-            <?php
-                while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
-                    ?>
-                    <div class="tab" >
-                <div class="swiper mySwiper-2" id="swiper1" >
-                    <div class="swiper-wrapper">
+       
+            
 
-                        
-                        <div class="swiper-slide">
-                        <div class="product">
-                        <div class="product-img">
-                            <h1>Unidad</h1>
-                            <img src="../assets/img/panderos.png" alt="">
-                        </div>
-                        <div class="product-txt">
-                            <h4>Panderos huilenses</h4>
-                            <p>calida premium</p>
-                            <span class="price" >$13.000</span>
-                            <div class="botones">
-                                <a href="#" class="btn-1">comprar</a>
-                            </div>
-                       </div>
-                   </div>
-              </div>
-                 <?php
-               
-                }
-            
-            
-           
-            
-            
-            ?>
-            
-<!-- productos ------------------------------------------------------------
 
             <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
             <label for="tab1" id="productos" class="pro">ACHIRAS</label>
@@ -369,7 +334,7 @@
 </div>
  
 </div>
-    -->
+    
    </main>
 
    <section class="info container">

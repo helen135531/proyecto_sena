@@ -1,6 +1,6 @@
 <?php 
 
-require_once('../modelo/db.php'); // Incluye el archivo de conexión a la base
+require_once('../nuevo carro/project/components/connect.php'); // Incluye el archivo de conexión a la base
 $id = $_GET['id'];
 //echo $id;
 // Consulta SQL para obtener la información del registro
