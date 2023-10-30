@@ -1,8 +1,9 @@
 use proyecto_sena;
-insert into rolUsuario(idRolUsuario,descripcionRolUsuario) values
-(1,'usuario'),
-(2,'domiciliario'),
-(3,'administrador');
+use bolitcm17gznhmyd2rid;
+insert into rolUsuario(idRolUsuario,descripcionRolUsuario,estadoRolUsuario) values
+(1,'usuario','A'),
+(2,'domiciliario','A'),
+(3,'administrador','A');
 
 select * from  rolUsuario;
 select * from  Usuario;

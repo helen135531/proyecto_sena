@@ -9,14 +9,25 @@ $conexion = new mysqli($server,$user,$pass,$db);*/
 
 //----------------------------------------------
 
-try{
+/*try{
     $db = new PDO('mysql:host=localhost; dbname=proyecto_sena', "root", "");
     
   }catch( PDOException $e){
   echo "error de conexion";
   exit;
 }
+*/
+try{
+  $db = new PDO('mysql:host=bolitcm17gznhmyd2rid-mysql.services.clever-cloud.com; dbname=bolitcm17gznhmyd2rid', "u72q3w71kdtf2fwb", "tosAeqYNLOGJg791qFlA");
+  
+}catch( PDOException $e){
+echo "error de conexion";
+exit;
+}
 
+if($db){
+ echo "conexion exitosa";
+}
 
 
 ?>

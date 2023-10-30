@@ -1,3 +1,4 @@
+<?php require('../modelo/db.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +38,17 @@
     <h1 id="B">BIENVENIDO <?php session_start(); echo $_SESSION['Nombre'];
      if($_SESSION['Rol'] == 3 ){
         echo '<a href="vistaA.php"><button> volver</button></a>';
-     } ?></h1>
+     } ?> <br>
+     tienes (
+        <?php 
+        $sql = "SELECT COUNT(*) FROM Pedido WHERE estadoPedido='pendiente'";
+        $stmt = $db->prepare($sql);
+        $stmt->execute();
+        $totalRegistros = $stmt->fetchColumn();
+        echo $totalRegistros;
+        ?>) pedidos pendientes <a href="LPedidos.php">ver pedidos</a></h1>
+
+    
         <div class="header-content container" id="pp">
         
             <div class="swiper mySwiper-1">

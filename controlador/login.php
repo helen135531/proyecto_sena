@@ -1,6 +1,7 @@
 <?php 
+
 if($_POST){
-    session_start();
+    
     
     require '../modelo/db.php';
             $email=$_POST['usuario'];
@@ -33,6 +34,10 @@ if($_POST){
                 if ($usuario["idRolUsuarioFK"]==1) {
                      echo "hola usuario";
                      header ("location:../vista/vistaU.php");
+                }
+                else if ($usuario["idRolUsuarioFK"]==2) {
+                    echo "hola administrador";
+                    header ("location:../vista/vistaD.php");
                 }
                 else if ($usuario["idRolUsuarioFK"]==3) {
                     echo "hola administrador";

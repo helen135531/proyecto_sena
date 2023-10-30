@@ -1,6 +1,7 @@
 drop database if exists PROYECTO_SENA;
 drop table usuario;
 use proyecto_sena;
+use bolitcm17gznhmyd2rid;
 
 select * from usuario
 ;
