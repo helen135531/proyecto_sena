@@ -2,9 +2,10 @@ use proyecto_sena;
 use bolitcm17gznhmyd2rid;
 show tables;
 select * from usuario;
-select * from producto;
-select * from pedido;
+select * from Producto;
+select * from Pedido;
 /*--------------------------------------------------------------------insertar datos------------------------------------------------------------------------*/
+
 /*insertar pedido*/
 insert into Pedido (fechaPedido,horaPedido,totalPedido,estadoPedido,pedidoaDomicilio,idUSuarioFK) values ('24/10/23',0131,89000,'pendiente','si',32);
  /*insetra admin*/
@@ -17,4 +18,5 @@ insert into Pedido (fechaPedido,horaPedido,totalPedido,estadoPedido,pedidoaDomic
 update usuario set idRolUsuarioFK='3' where idUsuario=3;
 /*----------------------------------------------------------------------ver datos----------------------------------------------------------------------*/
 SELECT COUNT(*) as total FROM Pedido WHERE estadoPedido='pendiente';
-/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------eliminar datos----------------------------------------------------------------*/
+DELETE 

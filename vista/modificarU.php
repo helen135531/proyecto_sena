@@ -2,7 +2,7 @@
 
 <?php 
 
-require_once('../controlador/Ausuario.php'); // Incluye el archivo de conexión a la base
+require_once('../controlador/Musuario.php'); // Incluye el archivo de conexión a la base
 $id = $_GET['id'];
 //echo $id;
 // Consulta SQL para obtener la información del registro
@@ -28,7 +28,7 @@ echo '
 
 <center>
 <h2>Modificar Registro</h2>
-<form action="../controlador/Ausuario.php" method="post" class="form" >
+<form action="../controlador/Musuario.php" method="post" class="form" >
 <input type="hidden" name="id" value="'. $registro['idUsuario'].'">
 <label for="campo_modificar">Tipo de documento:</label>
 <select class="form-control" name="tipoDocUsuario" required> 

@@ -31,11 +31,11 @@ $stmt->execute();
         <td> <?php echo $row['categoriaProducto'] ?></td>
         <td> <?php echo $row['estadoProducto'] ?></td>
         
-        <td><a href="../modelo/Eusuario.php?id=<?php echo $row['idProducto']?> ">eliminar</a></td>
-        <td><a href="../vista/modificarU.php?id=<?php echo $row['idProducto']?> ">modificar</a></td>
+        <td><a href="../modelo/Eproducto.php?id=<?php echo $row['idProducto']?> ">eliminar</a></td>
+        <td><a href="../vista/modificarP.php?id=<?php echo $row['idProducto']?> ">modificar</a></td>
 
 
     </tr> <?php
-    $numero ++;
+ 
     }?>
 </table>

@@ -5,7 +5,7 @@
 
 	// Consulta SQL para obtener los datos de los pedidos
 
-$sql = "SELECT * FROM pedido";
+$sql = "SELECT * FROM Pedido";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 
@@ -45,5 +45,8 @@ $pdf->Output();
 
 // Cierra la conexión a la base de datos
 $conexion->close();
+
+ob_clean();
+
 ?>
-?>
+

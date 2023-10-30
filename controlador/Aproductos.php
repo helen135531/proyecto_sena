@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 
-<body>container
+<body>container <!--
     <header class="main-header">
         <div class="logo">
           <a href="#pp"><img src="../assets/img/tamales.png" alt=""></a>
@@ -29,35 +29,41 @@
           <a href="#"><img src="../assets/img/pngwing.com.png" class="cesta" alt=""></a>
         </div>
       </header><br>
-
+-->
 <?php
 
 
 
 
-if(isset($_POST['agregarP'])){
+
 
     require_once("../modelo/db.php");
+
+  
+
+
+    //demas
     $nombreP=$_POST['nombreP'];
     $precioP=$_POST['precioP'];
 
+
     try{
+    $sql = "INSERT INTO Producto(descripProducto,precioProducto,categoriaProducto,estadoProducto) VALUES
+    ('$nombreP',$precioP,'pasabocas','disponible');";
+    $conexion= $db->prepare($sql);
 
-    $conexion= $db->prepare("INSERT INTO Producto(descripProducto,precioProducto,categoriaProducto,estadoProducto) VALUES
-    (':nombre',:precio,'pasabocas','disponible'),");
 
-
-    $conexion-> bindParam(':nombre',$nombreP);
-    $conexion-> bindParam(':precio',$precioP);
+    
     
     $conexion-> execute();
 
     echo"se agrego el producto";
+    header('location:../vista/verProductos.php');
     }
     catch(PDOException $e){
-        echo "error D:". $e->getMessage();
+        echo "error D:". $e;
     }
-}
+
 
 
 ?>

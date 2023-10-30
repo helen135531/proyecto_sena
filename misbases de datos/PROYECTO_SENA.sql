@@ -22,6 +22,7 @@ primary key(idProducto),
 descripProducto varchar(100) NOT NULL,
 precioProducto double not null,
 categoriaProducto varchar(40) not null,
+fotoProducto longblob,
 estadoProducto varchar(30)
 );
 

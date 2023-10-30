@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 if ($_SESSION["Rol"]== 1){
@@ -12,16 +13,22 @@ else if ($_SESSION["Rol"]== null || $_SESSION["Rol"]== ""){
 }
 
 else if($_SESSION["Rol"]== 3){?>
-<form action="../controlador/Aproductos.php" method="post">
-<input type="text" name="nombreP" id="" placeholder="ingresa nombre del producto">
-<input type="number" name="precioP" id="" placeholder="ingresa precio">
-<input type="submit" value="agregar" name="agregarP">
+
 <br><br><br><br><br><br><br><br>
-<?php
-require_once('../controlador/Aproductos.php')
 
+<form action="../controlador/Aproductos.php" method="post" id="B">
+        <!-- USERNAME INPUT -->
+        <label for="username">nombre del producto</label> <br>
+        <input type="text" placeholder="nombre del producto" name="nombreP"> <br>
+        <!-- PASSWORD INPUT -->
+        <label for="password">precio producto</label>  <br>
+        <input type="number" placeholder="Ingrese Password" name="precioP"><br>
 
-?>
+        
+        <input type="submit" value="agregar" name="enviar">
+    
+      </form>
+
 </form>
 <?php }
 echo "hola mundo :D";
